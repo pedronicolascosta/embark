@@ -1,0 +1,80 @@
+.hero {
+  background: #00586F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.logo-text h3 {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo-text p {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo-text b {
+  color: #26A3B9;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    height: 89vh; 
+    padding: 20px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .logo-text h3 {
+    font-size: 60px;
+  }
+
+  .logo-text p,
+  .logo-text b {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,137 @@
+.menu {
+  background-color: white;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h3 {
+  color: #192739;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  color: #192739;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+b {
+  color: #26A3B9;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+ul li a {
+  color: #192739;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.botao {
+  border-radius: 20px;
+  border: 1px solid #00586F;
+  display: flex;
+  width: 146px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #00586F;
+  font-family: Montserrat;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.botao:hover{
+  background-color: #00586F;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #00586F;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-only .botao {
+  color: #00586F;
+  font-family: Montserrat;
+}
+
+.mobile-only .botao:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+
+  .menu ul li {
+    width: 100%;
+    text-align:center
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .botao {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

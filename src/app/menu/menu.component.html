@@ -1,0 +1,21 @@
+<nav class="menu">
+  
+  <div class="logo">
+    <h3>EMBARK</h3>
+    <p>Navegando rumo à <b>eficiência</b></p>
+  </div>
+
+  <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+
+  <ul [class.active]="menuAberto">
+    <li><a routerLink="#sobre">Sobre</a></li>
+    <li><a routerLink="#metodologia">Metodologia</a></li>
+    <li><a routerLink="#documentacao">Documentação</a></li>
+    <li class="mobile-only">
+      <a class="botao" routerLink="/demo">Demonstração</a>
+    </li>
+  </ul>
+
+  <a class="botao desktop-only" routerLink="/demo">Demonstração</a>
+  
+</nav>
