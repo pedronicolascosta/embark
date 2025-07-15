@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeroComponent } from './hero/hero.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { TimeComponent } from './time/time.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TimeComponent } from './time/time.component';
     MenuComponent,
     HeroComponent,
     SobreComponent,
-    TimeComponent
+    TimeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

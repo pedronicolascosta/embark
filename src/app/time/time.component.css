@@ -2,7 +2,6 @@
   background-color: #f5f7fa;
   color: #192739;
   padding: 60px 20px;
-  height: 100vh;
 }
 
 .container {
@@ -26,39 +25,126 @@ b {
 
 .conteudo-time {
   display: flex;
-  gap: 5px;
-  margin-top: 40px;
   flex-wrap: wrap;
-}
-
-.linha {
-  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .perfil {
   background-color: #192739;
   color: white;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.perfil h3{
+.perfil:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.perfil img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.perfil h3 {
   font-family: Montserrat;
-  font-weight: 800;
-  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #192739;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  color: #ffffff;
+  position: relative;
+  font-family: Montserrat;
+}
+
+.foto-perfil {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.nome-idade h3{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nome-idade p{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal-content .fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #26A3B9;
+}
+
+.integrante-titulo {
+  display: flex;
+  gap: 15px;
+}
+
+.modal-content p{
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.modal-content b{
+  font-weight: 700;
+}
+
+.linkedin-icon {
+  transition: transform 0.2s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.1);
+}
+
+.redes-sociais {
   padding-top: 10px;
 }
 
 @media (max-width: 768px) {
-  .titulo-time {
-    font-size: 36px;
-    padding-left: 5px;
-  }
-
   .conteudo-time {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nome-idade h3{
+  font-size: 20px!important;
   }
 }

@@ -1,5 +1,6 @@
-<app-menu></app-menu>
+<app-menu (scrollTo)="onScrollTo($event)"></app-menu>
 <app-hero></app-hero>
-<app-sobre></app-sobre>
+<div #sobre><app-sobre></app-sobre></div>
 <app-time></app-time>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

@@ -8,7 +8,7 @@
   <div class="menu-toggle" (click)="toggleMenu()">☰</div>
 
   <ul [class.active]="menuAberto">
-    <li><a routerLink="#sobre">Sobre</a></li>
+    <li><a (click)="navegarPara('sobre')">Sobre</a></li>
     <li><a routerLink="#metodologia">Metodologia</a></li>
     <li><a routerLink="#documentacao">Documentação</a></li>
     <li class="mobile-only">

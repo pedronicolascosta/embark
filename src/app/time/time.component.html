@@ -26,9 +26,9 @@
             <img src="assets/time/guilherme.png" alt="Foto do Integrante Guilherme">
             <h3>Guilherme Lima</h3>
         </div>
-        <div class="perfil" id="pedro">
+        <div class="perfil" id="pedro" (click)="abrirModal('pedro')">
             <img src="assets/time/pedro.png" alt="Foto do Integrante Pedro">
-            <h3>Pedro Nicolas Costa</h3>
+            <h3>Pedro Costa</h3>
         </div>
         <div class="perfil" id="priscila">
             <img src="assets/time/priscila.png" alt="Foto da Integrante Priscilla">
@@ -37,6 +37,25 @@
         <div class="perfil" id="tomas">
             <img src="assets/time/tomas.png" alt="Foto do Integrante Tomas">
             <h3>Tomas Silva</h3>
+        </div>
+        <div class="modal-overlay" *ngIf="modalAberto" (click)="fecharModal()">
+            <div class="modal-content" (click)="$event.stopPropagation()">
+                <button class="fechar" (click)="fecharModal()">✖</button>
+                <div class="integrante-titulo">
+                    <img [src]="integranteSelecionado.foto" alt="Foto" class="foto-perfil"/>
+                    <div class="nome-idade">
+                        <h3>{{ integranteSelecionado.nome }}</h3>
+                        <p>{{ integranteSelecionado.idade }} anos</p>
+                    </div>
+                </div>
+                <p><b>Curso:</b> {{ integranteSelecionado.curso }}</p>
+                <p><b>Área:</b> {{ integranteSelecionado.area }}</p>
+                <div class="redes-sociais" *ngIf="integranteSelecionado.linkedin">
+                    <a [href]="integranteSelecionado.linkedin" target="_blank" aria-label="LinkedIn">
+                        <img src="assets/linkedin.svg" alt="LinkedIn" class="linkedin-icon">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
   </div>
