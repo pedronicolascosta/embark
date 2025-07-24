@@ -144,6 +144,11 @@ b {
     gap: 20px;
   }
 
+  .titulo-time {
+    font-size: 36px;
+    padding-left: 5px;
+  }
+
   .nome-idade h3{
   font-size: 20px!important;
   }

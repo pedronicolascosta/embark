@@ -9,13 +9,13 @@
 
   <ul [class.active]="menuAberto">
     <li><a (click)="navegarPara('sobre')">Sobre</a></li>
-    <li><a routerLink="#metodologia">Metodologia</a></li>
-    <li><a routerLink="#documentacao">Documentação</a></li>
+    <li><a (click)="navegarPara('problematica')">Problemática</a></li>
+    <li><a (click)="navegarPara('metodologia')">Metodologia</a></li>
     <li class="mobile-only">
-      <a class="botao" routerLink="/demo">Demonstração</a>
+      <a class="botao" target="_blank" href="https://app.powerbi.com/singleSignOn?language=pt-BR&ru=https%3A%2F%2Fapp.powerbi.com%2Fhome%3Flanguage%3Dpt-BR%26noSignUpCheck%3D1">Demonstração</a>
     </li>
   </ul>
 
-  <a class="botao desktop-only" routerLink="/demo">Demonstração</a>
+  <a class="botao desktop-only" target="_blank" href="https://app.powerbi.com/singleSignOn?language=pt-BR&ru=https%3A%2F%2Fapp.powerbi.com%2Fhome%3Flanguage%3Dpt-BR%26noSignUpCheck%3D1">Demonstração</a>
   
 </nav>

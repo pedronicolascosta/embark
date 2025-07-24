@@ -8,6 +8,9 @@ import { HeroComponent } from './hero/hero.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { TimeComponent } from './time/time.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProblematicaComponent } from './problematica/problematica.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { DemonstracaoComponent } from './demonstracao/demonstracao.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
     HeroComponent,
     SobreComponent,
     TimeComponent,
-    FooterComponent
+    FooterComponent,
+    ProblematicaComponent,
+    TimelineComponent,
+    DemonstracaoComponent
   ],
   imports: [
     BrowserModule,

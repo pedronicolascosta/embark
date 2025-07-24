@@ -1,0 +1,183 @@
+.metodologia-section {
+  background-color: #f5f7fa;
+  color: #192739;
+  padding: 60px 20px;
+  min-height: 50vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container p {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.titulo-metodologia {
+  font-family: Poppins, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.linha-metodologia {
+  height: 4px;
+  background-color: #26A3B9;
+  position: relative;
+}
+
+.timeline-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.timeline-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  cursor: grab;
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline {
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+  min-width: max-content;
+  align-items: center;
+  position: relative;
+}
+
+/* Botões */
+.scroll-btn {
+  color: #192739;
+  border: none;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #192739;
+  color: #f5f7fa;
+}
+
+.scroll-btn.left {
+  margin-left: -10px;
+}
+
+.scroll-btn.right {
+  margin-right: -10px;
+}
+
+/* Mobile: esconde botões se quiser */
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+}
+
+
+/* A linha que passa por trás dos círculos */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #26A3B9;
+  z-index: 0;
+}
+
+/* Coloque os eventos acima da linha */
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  background-color: #00586F;
+  color: white;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: pre-wrap;
+  font-weight: bold;
+  background-clip: padding-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.date {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #00586F;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+   .titulo-metodologia {
+    font-size: 36px;
+    padding-left: 5px;
+  }
+  .container p{
+    font-size: 18px;
+  }
+  .timeline {
+    flex-direction: column;
+  }
+  .date{
+    background-color: #192739;
+    padding: 10px;
+    border-radius: 12px;
+    color: #f5f7fa;
+  }
+
+  .timeline-wrapper {
+    overflow-x: hidden;
+  }
+
+  .timeline {
+    flex-direction: column;
+    min-width: unset;
+  }
+
+  .timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+  }
+}
