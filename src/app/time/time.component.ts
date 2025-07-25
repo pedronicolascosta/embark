@@ -23,12 +23,12 @@ export class TimeComponent implements OnInit {
     }
   } = {
         bruna: {
-          nome: 'Bruna Rachel',
-          idade: 0,
+          nome: 'Bruna Rachel Souza de Jesus',
+          idade: 23,
           curso: 'Direito',
-          area: '',
+          area: 'Jurídico Mercado de Capitais',
           foto: 'assets/time/bruna.png',
-          linkedin: 'https://linkedin.com/in/pedronicolascosta'
+          linkedin: 'https://www.linkedin.com/in/brunarachel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
         },
         daniel: {
           nome: 'Daniel Moreira',
@@ -60,7 +60,7 @@ export class TimeComponent implements OnInit {
           curso: 'Direito',
           area: 'Financeira Passivas',
           foto: 'assets/time/giovanna.png',
-          linkedin: 'https://linkedin.com/in/pedronicolascosta'
+          linkedin: 'https://www.linkedin.com/in/giovanna-calmon-26a308190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
         },
         guilherme: {
           nome: 'Guilherme Lima',
