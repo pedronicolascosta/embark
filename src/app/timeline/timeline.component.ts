@@ -9,15 +9,14 @@ export class TimelineComponent implements AfterViewInit {
   @ViewChild('timelineWrapper') timelineWrapper!: ElementRef;
 
   eventos = [
-    { texto: 'Evento 1', data: '01/01/2025' },
-    { texto: 'Evento 2', data: '02/01/2025' },
-    { texto: 'Evento 3', data: '03/01/2025' },
-    { texto: 'Evento 4', data: '04/01/2025' },
-    { texto: 'Evento 5', data: '05/01/2025' },
-    { texto: 'Evento 6', data: '06/01/2025' },
-    { texto: 'Evento 7', data: '07/01/2025' },
-    { texto: 'Evento 8', data: '08/01/2025' }
+  { texto: 'Formação da equipe e definição do problema com a área jurídica ', data: 'Maio 2025', futuro: false },
+  { texto: 'Levantamento de requisitos e coleta de dados', data: 'Junho 2025', futuro: false },
+  { texto: 'Desenvolvimento do protótipo da dashboard', data: 'Julho 2025', futuro: false },
+  { texto: '1º Pitch de apresentação para os sponsors', data: 'Julho 2025', futuro: false },
+  { texto: 'Criação de scripts em Python para leitura automatizada de notas fiscais', data: 'Agosto 2025', futuro: true },
+  { texto: 'Validação técnica e testes da dashboard final ', data: 'Setembro 2025', futuro: true }
   ];
+
 
   ngAfterViewInit() {
     const el = this.timelineWrapper.nativeElement as HTMLElement;

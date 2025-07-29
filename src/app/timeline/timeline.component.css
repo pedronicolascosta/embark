@@ -2,7 +2,7 @@
   background-color: #f5f7fa;
   color: #192739;
   padding: 60px 20px;
-  min-height: 50vh;
+
 }
 
 .container {
@@ -16,6 +16,11 @@
   line-height: 1.6;
   font-weight: 400;
   text-align: justify;
+}
+
+b{
+  color: #26A3B9;
+  font-weight: 700;
 }
 
 .titulo-metodologia {
@@ -40,7 +45,7 @@
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding-top: 15px;
+  padding-top: 50px;
 }
 
 .timeline-wrapper {
@@ -123,8 +128,8 @@
   background-color: #00586F;
   color: white;
   border-radius: 50%;
-  width: 170px;
-  height: 170px;
+  width: 190px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +138,7 @@
   font-weight: bold;
   background-clip: padding-box;
   font-family: Montserrat, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -145,6 +150,16 @@
   font-size: 12px;
   font-weight: 500;
 }
+
+.evento-futuro .circle {
+  background-color: #ccc;
+  color: #333;
+}
+
+.evento-futuro .date {
+  color: #ffffff;
+}
+
 
 @media (max-width: 768px) {
    .titulo-metodologia {
@@ -163,6 +178,10 @@
     border-radius: 12px;
     color: #f5f7fa;
   }
+  .evento-futuro .date {
+  background-color: #ccc;
+  color: #333;
+}
 
   .timeline-wrapper {
     overflow-x: hidden;

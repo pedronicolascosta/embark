@@ -1,12 +1,15 @@
 <section id="metodologia" class="metodologia-section">
   <div class="container">
     <h2 class="titulo-metodologia">Metodologia</h2>
-    <p>Observe abaixo como o grupo se organizou em suas entregas</p>
+    <p>O desenvolvimento da solução seguiu uma abordagem estruturada com base na metodologia 5W2H, que orientou o planejamento e execução do projeto a partir de sete perguntas fundamentais: </p>
+    <p><b>What, Why, Where, When, Who, How e How much.</b></p>
+    <p></p>
+    <p>O desenvolvimento do projeto seguiu uma abordagem iterativa, com etapas bem definidas e entregas progressivas. Cada fase foi estruturada para promover a colaboração ativa entre a equipe técnica e a área demandante, garantindo que as soluções propostas estivessem sempre alinhadas aos objetivos do negócio. Abaixo, destacamos os principais marcos dessa jornada.</p>
     <div class="timeline-container">
       <button class="scroll-btn left" (click)="scrollTimeline('left')">&lt;</button>
       <div class="timeline-wrapper" #timelineWrapper>
         <div class="timeline">
-          <div class="event" *ngFor="let e of eventos">
+          <div class="event" *ngFor="let e of eventos" [ngClass]="{ 'evento-futuro': e.futuro }">
             <div class="circle">{{ e.texto }}</div>
             <div class="date">{{ e.data }}</div>
           </div>
